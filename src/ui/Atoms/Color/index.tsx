@@ -1,19 +1,19 @@
 import React from "react";
-import styles from "./index.module.scss";
 
-export enum ButtonType {
+
+export enum ColorType {
   primary = "primary",
   secondary = "secondary",
   link = "link"
 }
 
-interface ButtonProps {
+interface ColorProps {
   label: string;
   icon?: React.ReactNode;
   className?: string;
   onClick?: () => void;
   href?: string;
-  type: ButtonType;
+  type: ColorType;
 }
 
 export default function Button({
@@ -23,6 +23,6 @@ export default function Button({
   onClick,
   href,
   type
-}: ButtonProps) {
-  return <button className={styles[type]}>{label}</button>;
+}: ColorProps) {
+  return <div></div>
 }
