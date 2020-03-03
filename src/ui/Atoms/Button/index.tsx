@@ -1,28 +1,42 @@
 import React from 'react';
-import styles from "./index.module.scss";
+import styles from './index.module.scss';
+import classNames from 'classnames';
 
-export enum ButtonType {
-  primary = "primary",
-  secondary = "secondary",
-  link = "link"
-}
-
-interface ButtonProps {
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  kind: 'primary' | 'secondary' | 'link';
   label: string;
   icon?: React.ReactNode;
-  className?: string;
+  iconPosition?: 'left' | 'right';
   onClick?: () => void;
   href?: string;
-  type: ButtonType;
 }
 
 export default function Button({
+  kind,
   label,
   icon,
+  iconPosition,
   className,
   onClick,
   href,
-  type
+  ...htmlProps
 }: ButtonProps) {
-  return <button className={styles[type]}>{label}</button>;
+  return kind === 'link' ? (
+    <a
+      className={classNames(className, styles[kind])}
+      href={href}
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      {iconPosition === 'left' && icon}
+      {label}
+      {iconPosition === 'right' && icon}
+    </a>
+  ) : (
+    <button className={classNames(className, styles[kind])} onClick={onClick} {...htmlProps}>
+      {iconPosition === 'left' && icon}
+      {label}
+      {iconPosition === 'right' && icon}
+    </button>
+  );
 }

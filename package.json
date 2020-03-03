@@ -10,8 +10,9 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
+    "classnames": "^2.2.6",
     "node-sass": "^4.13.1",
-    "react": "^16.12.0",
+    "react": "^16.13.0",
     "react-dom": "^16.12.0",
     "react-scripts": "3.4.0",
     "typescript": "~3.7.2"
@@ -42,11 +43,22 @@
   "devDependencies": {
     "@storybook/addon-a11y": "^5.3.13",
     "@storybook/addon-actions": "^5.3.13",
+    "@storybook/addon-docs": "^5.3.14",
     "@storybook/addon-knobs": "^5.3.13",
     "@storybook/addon-links": "^5.3.13",
     "@storybook/addons": "^5.3.13",
     "@storybook/preset-create-react-app": "^1.5.2",
     "@storybook/react": "^5.3.13",
-    "webpack": "^4.41.6"
+    "@types/classnames": "^2.2.9",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.0.6",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-react": "^7.18.3",
+    "prettier": "^1.19.1",
+    "pretty-quick": "^2.0.1",
+    "react-is": "^16.13.0"
   }
 }
