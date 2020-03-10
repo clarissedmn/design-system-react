@@ -1,0 +1,7 @@
+@mixin default-border {
+  border: solid 1px transparent;
+}
+
+@mixin default-border-radius {
+  border-radius: 20px;
+}

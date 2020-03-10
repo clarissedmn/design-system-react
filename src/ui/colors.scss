@@ -1,0 +1,41 @@
+$primary: #0e2356;
+$secondary: #00afcb;
+$yellow_ocac: #ffb600;
+$black_ocac: #1d1d1b;
+$orange: #ff7325;
+$purple: #8b69d3;
+$blue: #14c4b3;
+$green: #2bc82b;
+$red: #ff4338;
+$yellow: #ffed00;
+$darkest:#333333 ;
+$darker: #444444;
+$dark: #666666;
+$mediumdark: #999999;
+$medium: #DDDDDD;
+$mediumlight: #EEEEEE;
+$light: #F3F3F3;
+$lighter: #F8F8F8;
+$lightest: #FFFFFF;
+
+:export {
+  primary: $primary;
+  secondary: $secondary;
+  yellow_ocac: $yellow_ocac;
+  black_ocac: $black_ocac;
+  orange: $orange;
+  purple: $purple;
+  blue: $blue;
+  green: $green;
+  red: $red;
+  yellow: $yellow;
+  darkest: $darkest;
+  darker: $darker;
+  dark: $dark;
+  mediumdark: $mediumdark;
+  medium: $medium;
+  mediumlight: $mediumlight;
+  light: $light;
+  lighter: $lighter;
+  lightest: $lightest;
+}

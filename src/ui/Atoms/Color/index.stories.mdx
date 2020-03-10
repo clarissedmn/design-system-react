@@ -1,0 +1,34 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/addon-docs/blocks';
+
+import colors from '../../colors.scss';
+
+<Meta title="Atoms|Colors" />
+
+# Colors
+
+<ColorPalette>
+  <ColorItem title="theme.color.primary" subtitle="Primary" colors={[colors.primary]} />
+  <ColorItem title="theme.color.secondary" subtitle="Secondary" colors={[colors.secondary]} />
+  <ColorItem title="theme.color.yellow_ocac" subtitle="Yellow Ocac" colors={[colors.yellow_ocac]} />
+  <ColorItem title="theme.color.black_ocac" subtitle="Black Ocac" colors={[colors.black_ocac]} />
+  <ColorItem title="theme.color.orange" subtitle="Orange" colors={[colors.orange]} />
+  <ColorItem title="theme.color.purple" subtitle="Purple" colors={[colors.purple]} />
+  <ColorItem title="theme.color.blue" subtitle="Blue" colors={[colors.blue]} />
+  <ColorItem title="theme.color.green" subtitle="Green" colors={[colors.green]} />
+  <ColorItem title="theme.color.red" subtitle="Red" colors={[colors.red]} />
+  <ColorItem title="theme.color.yellow" subtitle="Yellow" colors={[colors.yellow]} />
+  <ColorItem
+    title="Monochrome"
+    colors={[
+      colors.darkest,
+      colors.darker,
+      colors.dark,
+      colors.mediumdark,
+      colors.medium,
+      colors.mediumlight,
+      colors.light,
+      colors.lighter,
+      colors.lightest,
+    ]}
+  />
+</ColorPalette>

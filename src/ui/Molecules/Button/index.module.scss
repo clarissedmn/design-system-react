@@ -1,0 +1,95 @@
+@import '../../colors.scss';
+@import '../../mixins.scss';
+
+// Common buttons properties
+.primary,
+.secondary,
+.tertiary,
+.quaternary,
+.primaryOutline,
+.secondaryOutline,
+.tertiaryOutline,
+.quaternaryOutline {
+  @include default-border;
+  @include default-border-radius;
+  cursor: pointer;
+  min-height: 2.8rem;
+  font-size: 1rem;
+  padding: 0 2rem;
+  margin: 1rem;
+}
+
+.primary {
+  font-family: 'Century Gothic', 'Futura', sans-serif;
+  color: $lightest;
+  background-color: $primary;
+}
+
+.secondary {
+  font-family: 'Century Gothic', 'Futura', sans-serif;
+  background-color: $secondary;
+  color: $lightest;
+}
+
+.tertiary {
+  font-family: 'Century Gothic', 'Futura', sans-serif;
+  background-color: $yellow_ocac;
+  color: $lightest;
+}
+
+.quaternary {
+  font-family: 'Century Gothic', 'Futura', sans-serif;
+  background-color: $black-ocac;
+  color: $lightest;
+}
+
+.primaryOutline {
+  font-family: 'Century Gothic', 'Futura', sans-serif;
+  color: $primary;
+  background-color: $lightest;
+  border: solid 1px $primary;
+  &:hover {
+    color: $lightest;
+    background-color: $primary;
+  }
+}
+
+.secondaryOutline {
+  font-family: 'Century Gothic', 'Futura', sans-serif;
+  background-color: $lightest;
+  color: $secondary;
+  border: solid 1px $secondary;
+  &:hover {
+    color: $lightest;
+    background-color: $secondary;
+  }
+}
+
+.tertiaryOutline {
+  font-family: 'Century Gothic', 'Futura', sans-serif;
+  background-color: $lightest;
+  color: $yellow_ocac;
+  border: solid 1px $yellow_ocac;
+  &:hover {
+    color: $lightest;
+    background-color: $yellow_ocac;
+  }
+}
+
+.quaternaryOutline {
+  font-family: 'Century Gothic', 'Futura', sans-serif;
+  background-color: $lightest;
+  color: $black-ocac;
+  border: solid 1px $black-ocac;
+  &:hover {
+    color: $lightest;
+    background-color: $black-ocac;
+  }
+}
+
+.link {
+  cursor: pointer;
+  color: #0e2356;
+  font-family: 'Century Gothic', 'Futura', sans-serif;
+  font-size: 1rem;
+}

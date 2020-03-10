@@ -3,12 +3,23 @@ import styles from './index.module.scss';
 import classNames from 'classnames';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  kind: 'primary' | 'secondary' | 'link';
+  kind:
+    | 'primary'
+    | 'secondary'
+    | 'tertiary'
+    | 'quaternary'
+    | 'primaryOutline'
+    | 'secondaryOutline'
+    | 'tertiaryOutline'
+    | 'quaternaryOutline'
+    | 'link';
   label: string;
+  /** Choose an icon */
   icon?: React.ReactNode;
   iconPosition?: 'left' | 'right';
   onClick?: () => void;
   href?: string;
+  disabled?: boolean;
 }
 
 export default function Button({
@@ -19,6 +30,7 @@ export default function Button({
   className,
   onClick,
   href,
+  disabled,
   ...htmlProps
 }: ButtonProps) {
   return kind === 'link' ? (
@@ -33,7 +45,12 @@ export default function Button({
       {iconPosition === 'right' && icon}
     </a>
   ) : (
-    <button className={classNames(className, styles[kind])} onClick={onClick} {...htmlProps}>
+    <button
+      className={classNames(className, styles[kind])}
+      onClick={onClick}
+      disabled={disabled}
+      {...htmlProps}
+    >
       {iconPosition === 'left' && icon}
       {label}
       {iconPosition === 'right' && icon}
