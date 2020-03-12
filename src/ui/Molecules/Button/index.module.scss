@@ -17,79 +17,111 @@
   font-size: 1rem;
   padding: 0 2rem;
   margin: 1rem;
+  transition-duration: 0.3s;
+  font-family: 'Avenir', 'Century Gothic', sans-serif;
 }
 
 .primary {
-  font-family: 'Century Gothic', 'Futura', sans-serif;
   color: $lightest;
-  background-color: $primary;
+  background-color: $primary_dark;
+  &:disabled {
+    opacity:0.4;
+
+  }
 }
 
 .secondary {
-  font-family: 'Century Gothic', 'Futura', sans-serif;
-  background-color: $secondary;
   color: $lightest;
+  background-color: $secondary_dark;
+  &:disabled {
+    color: $lightest;
+    background-color: $secondary_medium;
+  }
 }
 
 .tertiary {
-  font-family: 'Century Gothic', 'Futura', sans-serif;
-  background-color: $yellow_ocac;
+  background-color: $yellow_ocac_dark;
   color: $lightest;
+  &:disabled {
+    color: $lightest;
+    background-color: $yellow_ocac_medium;
+  }
 }
 
 .quaternary {
-  font-family: 'Century Gothic', 'Futura', sans-serif;
-  background-color: $black-ocac;
+  background-color: $black-ocac_dark;
   color: $lightest;
+  &:disabled {
+    color: $lightest;
+    background-color: $black_ocac_medium;
+  }
 }
 
 .primaryOutline {
-  font-family: 'Century Gothic', 'Futura', sans-serif;
-  color: $primary;
+  color: $primary_dark;
   background-color: $lightest;
-  border: solid 1px $primary;
+  border: solid 1px $primary_dark;
   &:hover {
     color: $lightest;
-    background-color: $primary;
+    background-color: $primary_dark;
+  }
+  &:disabled {
+    color: $primary_light;
+    background-color: $lightest;
+    border: solid 1px $primary_light;
   }
 }
 
 .secondaryOutline {
-  font-family: 'Century Gothic', 'Futura', sans-serif;
   background-color: $lightest;
-  color: $secondary;
-  border: solid 1px $secondary;
+  color: $secondary_dark;
+  border: solid 1px $secondary_dark;
   &:hover {
     color: $lightest;
-    background-color: $secondary;
+    background-color: $secondary_dark;
+  }
+  &:disabled {
+    color: $secondary_light;
+    background-color: $lightest;
+    border: solid 1px $secondary_light;
   }
 }
 
 .tertiaryOutline {
-  font-family: 'Century Gothic', 'Futura', sans-serif;
   background-color: $lightest;
-  color: $yellow_ocac;
-  border: solid 1px $yellow_ocac;
+  color: $yellow_ocac_dark;
+  border: solid 1px $yellow_ocac_dark;
   &:hover {
     color: $lightest;
-    background-color: $yellow_ocac;
+    background-color: $yellow_ocac_dark;
+  }
+  &:disabled {
+    color: $yellow_ocac_light;
+    background-color: $lightest;
+    border: solid 1px $yellow_ocac_light;
   }
 }
 
 .quaternaryOutline {
-  font-family: 'Century Gothic', 'Futura', sans-serif;
   background-color: $lightest;
-  color: $black-ocac;
-  border: solid 1px $black-ocac;
+  color: $black-ocac_dark;
+  border: solid 1px $black_ocac_dark;
   &:hover {
     color: $lightest;
-    background-color: $black-ocac;
+    background-color: $black-ocac_dark;
+  }
+  &:disabled {
+    color: $black_ocac_light;
+    background-color: $lightest;
+    border: solid 1px $black_ocac_light;
   }
 }
 
 .link {
   cursor: pointer;
-  color: #0e2356;
-  font-family: 'Century Gothic', 'Futura', sans-serif;
+  color: $primary_dark;
   font-size: 1rem;
+  &:disabled {
+    color: $primary_light;
+  }
 }

@@ -2,21 +2,52 @@ import { Meta, ColorPalette, ColorItem } from '@storybook/addon-docs/blocks';
 
 import colors from '../../colors.scss';
 
-<Meta title="Atoms|Colors" />
+<Meta title="⚛️Atoms|🌈Colors" />
 
 # Colors
 
 <ColorPalette>
-  <ColorItem title="theme.color.primary" subtitle="Primary" colors={[colors.primary]} />
-  <ColorItem title="theme.color.secondary" subtitle="Secondary" colors={[colors.secondary]} />
-  <ColorItem title="theme.color.yellow_ocac" subtitle="Yellow Ocac" colors={[colors.yellow_ocac]} />
-  <ColorItem title="theme.color.black_ocac" subtitle="Black Ocac" colors={[colors.black_ocac]} />
-  <ColorItem title="theme.color.orange" subtitle="Orange" colors={[colors.orange]} />
-  <ColorItem title="theme.color.purple" subtitle="Purple" colors={[colors.purple]} />
-  <ColorItem title="theme.color.blue" subtitle="Blue" colors={[colors.blue]} />
-  <ColorItem title="theme.color.green" subtitle="Green" colors={[colors.green]} />
-  <ColorItem title="theme.color.red" subtitle="Red" colors={[colors.red]} />
-  <ColorItem title="theme.color.yellow" subtitle="Yellow" colors={[colors.yellow]} />
+  <ColorItem
+    title="Monochrome Primary"
+    colors={[colors.primary_dark, colors.primary_mediumdark, colors.primary_medium, colors.primary_mediumlight, colors.primary_light]}
+  />
+  <ColorItem
+    title="Monochrome Secondary"
+    colors={[colors.secondary_dark, colors.secondary_mediumdark, colors.secondary_medium, colors.secondary_mediumlight, colors.secondary_light]}
+  /><ColorItem
+    title="Monochrome Yellow Ocac"
+    colors={[colors.yellow_ocac_dark, colors.yellow_ocac_mediumdark, colors.yellow_ocac_medium, colors.yellow_ocac_mediumlight,colors.yellow_ocac_light]}
+  />
+  <ColorItem
+    title="Monochrome Black Ocac"
+    colors={[colors.black_ocac_dark, colors.black_ocac_mediumdark, colors.black_ocac_medium,colors.black_ocac_mediumlight, colors.black_ocac_light]}
+  />
+
+   <ColorItem
+    title="Monochrome Orange"
+    colors={[colors.orange_dark, colors.orange_mediumdark, colors.orange_medium, colors.orange_mediumlight, colors.orange_light]}
+  />
+   <ColorItem
+    title="Monochrome Purple"
+    colors={[colors.purple_dark, colors.purple_mediumdark, colors.purple_medium, colors.purple_mediumlight, colors.purple_light]}
+  />
+   <ColorItem
+    title="Monochrome Blue"
+    colors={[colors.blue_dark, colors.blue_mediumdark, colors.blue_medium,colors.blue_mediumlight,  colors.blue_light]}
+  />
+   <ColorItem
+    title="Monochrome Green"
+    colors={[colors.green_dark, colors.green_mediumdark, colors.green_medium, colors.green_mediumlight, colors.green_light]}
+  />
+   <ColorItem
+    title="Monochrome Red"
+    colors={[colors.red_dark, colors.red_mediumdark, colors.red_medium, colors.red_mediumlight, colors.red_light]}
+  />
+   <ColorItem
+    title="Monochrome Yellow"
+    colors={[colors.yellow_dark, colors.yellow_mediumdark, colors.yellow_medium, colors.yellow_mediumlight, colors.yellow_light]}
+  />
+
   <ColorItem
     title="Monochrome"
     colors={[
