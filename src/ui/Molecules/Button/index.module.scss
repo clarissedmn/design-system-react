@@ -1,32 +1,33 @@
-@import '../../colors.scss';
-@import '../../mixins.scss';
+@import '../../colors';
+@import '../../mixins';
 
 // Common buttons properties
 .primary,
 .secondary,
 .tertiary,
 .quaternary,
-.primaryOutline,
-.secondaryOutline,
-.tertiaryOutline,
-.quaternaryOutline {
+.primary_outline,
+.secondary_outline,
+.tertiary_outline,
+.quaternary_outline {
   @include default-border;
   @include default-border-radius;
+  @include default-font-family;
   cursor: pointer;
   min-height: 2.8rem;
   font-size: 1rem;
-  padding: 0 2rem;
+  padding: 0.2rem 2rem;
   margin: 1rem;
   transition-duration: 0.3s;
-  font-family: 'Avenir', 'Century Gothic', sans-serif;
 }
 
 .primary {
   color: $lightest;
   background-color: $primary_dark;
   &:disabled {
-    opacity:0.4;
-
+    color: $lightest;
+    background-color: $primary_medium;
+    cursor: not-allowed;
   }
 }
 
@@ -36,6 +37,7 @@
   &:disabled {
     color: $lightest;
     background-color: $secondary_medium;
+    cursor: not-allowed;
   }
 }
 
@@ -45,6 +47,7 @@
   &:disabled {
     color: $lightest;
     background-color: $yellow_ocac_medium;
+    cursor: not-allowed;
   }
 }
 
@@ -54,10 +57,11 @@
   &:disabled {
     color: $lightest;
     background-color: $black_ocac_medium;
+    cursor: not-allowed;
   }
 }
 
-.primaryOutline {
+.primary_outline {
   color: $primary_dark;
   background-color: $lightest;
   border: solid 1px $primary_dark;
@@ -69,10 +73,11 @@
     color: $primary_light;
     background-color: $lightest;
     border: solid 1px $primary_light;
+    cursor: not-allowed;
   }
 }
 
-.secondaryOutline {
+.secondary_outline {
   background-color: $lightest;
   color: $secondary_dark;
   border: solid 1px $secondary_dark;
@@ -84,10 +89,11 @@
     color: $secondary_light;
     background-color: $lightest;
     border: solid 1px $secondary_light;
+    cursor: not-allowed;
   }
 }
 
-.tertiaryOutline {
+.tertiary_outline {
   background-color: $lightest;
   color: $yellow_ocac_dark;
   border: solid 1px $yellow_ocac_dark;
@@ -99,10 +105,11 @@
     color: $yellow_ocac_light;
     background-color: $lightest;
     border: solid 1px $yellow_ocac_light;
+    cursor: not-allowed;
   }
 }
 
-.quaternaryOutline {
+.quaternary_outline {
   background-color: $lightest;
   color: $black-ocac_dark;
   border: solid 1px $black_ocac_dark;
@@ -114,6 +121,7 @@
     color: $black_ocac_light;
     background-color: $lightest;
     border: solid 1px $black_ocac_light;
+    cursor: not-allowed;
   }
 }
 
@@ -123,5 +131,6 @@
   font-size: 1rem;
   &:disabled {
     color: $primary_light;
+    cursor: not-allowed;
   }
 }

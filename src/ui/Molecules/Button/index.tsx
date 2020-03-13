@@ -8,10 +8,10 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     | 'secondary'
     | 'tertiary'
     | 'quaternary'
-    | 'primaryOutline'
-    | 'secondaryOutline'
-    | 'tertiaryOutline'
-    | 'quaternaryOutline'
+    | 'primary_outline'
+    | 'secondary_outline'
+    | 'tertiary_outline'
+    | 'quaternary_outline'
     | 'link';
   label: string;
   /** Choose an icon */
