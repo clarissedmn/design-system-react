@@ -3,7 +3,7 @@ import { action } from '@storybook/addon-actions';
 import { withA11y } from '@storybook/addon-a11y';
 import { withKnobs, text, boolean, number } from '@storybook/addon-knobs';
 
-import Title from '../../../src/ui/Atoms/Typography';
+import Title from '../../../src/ui/Atoms/Typography/Title';
 import Paragraph from '../../../src/ui/Atoms/Typography/Paragraph';
 
 import '../../../src/ui/Atoms/index.scss'

@@ -1,0 +1,16 @@
+@import '../../colors';
+@import '../../mixins';
+
+.modal {
+  @include default-border;
+  @include default-border-radius;
+  @include default-font-family;
+  margin: 5rem;
+  padding: 5rem;
+  height: auto;
+  background-color: white;
+  color: $primary_dark;
+  z-index: 1;
+  border: solid 1px $primary_dark;
+  outline: none;
+}

@@ -36,7 +36,7 @@ export default function Button({
   className,
   onClick,
   href,
-  disabled= false,
+  disabled = false,
   ...htmlProps
 }: ButtonProps) {
   return kind === 'link' ? (
