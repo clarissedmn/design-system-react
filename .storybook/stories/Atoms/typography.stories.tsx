@@ -1,21 +1,34 @@
 import React from 'react';
 import { action } from '@storybook/addon-actions';
 import { withA11y } from '@storybook/addon-a11y';
+import { withKnobs, text, boolean, number } from '@storybook/addon-knobs';
+
+import Title from '../../../src/ui/Atoms/Typography';
+import Paragraph from '../../../src/ui/Atoms/Typography/Paragraph';
+
 import '../../../src/ui/Atoms/index.scss'
 
 
 export default {
-  title: '⚛️Atoms|Typography',
-  decorators: [withA11y],
+  component: Title, Paragraph,
+  title: '⚛️Atoms|✏️Typography',
+  decorators: [withA11y, withKnobs],
 };
 
-export const headings = () => (
+
+export const title = () => (
   <>
-    <h1>h1 heading</h1>
-    <h2>h2 heading</h2>
-    <h3>h3 heading</h3>
-    <h4>h4 heading</h4>
-    <h5>h5 heading</h5>
-    <h6>h6 heading</h6>
+    <Title level={1}>h1 heading</Title>
+    <Title level={2}>h2 heading</Title>
+    <Title level={3}>h3 heading</Title>
+    <Title level={4}>h4 heading</Title>
   </>
 );
+
+export const paragraph = () => (
+  <>
+  <Paragraph level="XL">XL Paragraph</Paragraph>
+  <Paragraph level="L">L Paragraph</Paragraph>
+  <Paragraph level="M">M Paragraph</Paragraph>
+  </>
+)
