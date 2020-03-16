@@ -18,6 +18,7 @@
   font-size: 1rem;
   padding: 0.2rem 2rem;
   transition-duration: 0.3s;
+  outline: none;
 }
 
 .primary {
@@ -31,10 +32,10 @@
 }
 
 .secondary {
-  color: $lightest;
+  color: $primary_dark;
   background-color: $secondary_dark;
   &:disabled {
-    color: $lightest;
+    color: $primary_dark;
     background-color: $secondary_medium;
     cursor: not-allowed;
   }
@@ -42,7 +43,7 @@
 
 .tertiary {
   background-color: $yellow_ocac_dark;
-  color: $lightest;
+  color: black;
   &:disabled {
     color: $lightest;
     background-color: $yellow_ocac_medium;
@@ -78,10 +79,10 @@
 
 .secondary_outline {
   background-color: $lightest;
-  color: $secondary_dark;
+  color: $primary_dark;
   border: solid 1px $secondary_dark;
   &:hover {
-    color: $lightest;
+    color: $primary_dark;
     background-color: $secondary_dark;
   }
   &:disabled {
@@ -94,10 +95,10 @@
 
 .tertiary_outline {
   background-color: $lightest;
-  color: $yellow_ocac_dark;
+  color: $black_ocac_dark;
   border: solid 1px $yellow_ocac_dark;
   &:hover {
-    color: $lightest;
+    color: $black_ocac_dark;
     background-color: $yellow_ocac_dark;
   }
   &:disabled {
