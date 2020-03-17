@@ -29,7 +29,7 @@
     background-color: $primary_medium;
   }
   &:disabled {
-    color: $lightest;
+    color: $primary_light;
     background-color: $primary_medium;
     cursor: not-allowed;
   }
@@ -42,7 +42,7 @@
     background-color: $secondary_medium;
   }
   &:disabled {
-    color: $primary_dark;
+    color:$primary_light;
     background-color: $secondary_medium;
     cursor: not-allowed;
   }
@@ -55,7 +55,7 @@
     background-color: $yellow_ocac_medium;
   }
   &:disabled {
-    color: $lightest;
+    color: $black-ocac_light;
     background-color: $yellow_ocac_medium;
     cursor: not-allowed;
   }
@@ -68,7 +68,7 @@
     background-color: $black-ocac_medium;
   }
   &:disabled {
-    color: $lightest;
+    color: $black-ocac_light;
     background-color: $black_ocac_medium;
     cursor: not-allowed;
   }
@@ -95,11 +95,11 @@
   color: $primary_dark;
   border: solid 1px $secondary_dark;
   &:hover {
-    color: $primary_dark;
+    color: $lightest;
     background-color: $secondary_dark;
   }
   &:disabled {
-    color: $secondary_light;
+    color: $primary_light;
     background-color: $lightest;
     border: solid 1px $secondary_light;
     cursor: not-allowed;
@@ -115,7 +115,7 @@
     background-color: $yellow_ocac_dark;
   }
   &:disabled {
-    color: $yellow_ocac_light;
+    color: $black_ocac_light;
     background-color: $lightest;
     border: solid 1px $yellow_ocac_light;
     cursor: not-allowed;
