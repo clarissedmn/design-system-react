@@ -16,7 +16,7 @@ export default {
 
 export const allButtons = () => (
   <>
-    <Button className="btn" kind="primary_outline" onClick={action('clicked')} label="Primary" />
+    <Button className="btn" kind="primary_outline" onClick={action('clicked')} label="En savoir plus" />
     <Button
       className="btn"
       kind="secondary_outline"

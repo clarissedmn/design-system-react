@@ -14,16 +14,20 @@
   @include default-border-radius;
   @include default-font-family;
   cursor: pointer;
-  min-height: 2.8rem;
-  font-size: 1rem;
-  padding: 0.2rem 2rem;
+  min-height: 2.2rem;
+  font-size: 1.125rem;
+  padding: 0.5rem 0.75rem;
   transition-duration: 0.3s;
   outline: none;
+  font-weight: 700;
 }
 
 .primary {
   color: $lightest;
   background-color: $primary_dark;
+  &:hover {
+    background-color: $primary_medium;
+  }
   &:disabled {
     color: $lightest;
     background-color: $primary_medium;
@@ -34,6 +38,9 @@
 .secondary {
   color: $primary_dark;
   background-color: $secondary_dark;
+  &:hover {
+    background-color: $secondary_medium;
+  }
   &:disabled {
     color: $primary_dark;
     background-color: $secondary_medium;
@@ -44,6 +51,9 @@
 .tertiary {
   background-color: $yellow_ocac_dark;
   color: black;
+  &:hover {
+    background-color: $yellow_ocac_medium;
+  }
   &:disabled {
     color: $lightest;
     background-color: $yellow_ocac_medium;
@@ -54,6 +64,9 @@
 .quaternary {
   background-color: $black-ocac_dark;
   color: $lightest;
+  &:hover {
+    background-color: $black-ocac_medium;
+  }
   &:disabled {
     color: $lightest;
     background-color: $black_ocac_medium;
