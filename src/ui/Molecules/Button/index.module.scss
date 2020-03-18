@@ -24,126 +24,126 @@
 
 .primary {
   color: $lightest;
-  background-color: $primary_dark;
+  background-color: $primary-dark;
   &:hover {
-    background-color: $primary_medium;
+    background-color: $primary-medium;
   }
   &:disabled {
-    color: $primary_light;
-    background-color: $primary_medium;
+    color: $primary-light;
+    background-color: $primary-medium;
     cursor: not-allowed;
   }
 }
 
 .secondary {
-  color: $primary_dark;
-  background-color: $secondary_dark;
+  color: $primary-dark;
+  background-color: $secondary-dark;
   &:hover {
-    background-color: $secondary_medium;
+    background-color: $secondary-medium;
   }
   &:disabled {
-    color:$primary_light;
-    background-color: $secondary_medium;
+    color:$primary-light;
+    background-color: $secondary-medium;
     cursor: not-allowed;
   }
 }
 
 .tertiary {
-  background-color: $yellow_ocac_dark;
+  background-color: $yellow-ocac-dark;
   color: black;
   &:hover {
-    background-color: $yellow_ocac_medium;
+    background-color: $yellow-ocac-medium;
   }
   &:disabled {
-    color: $black-ocac_light;
-    background-color: $yellow_ocac_medium;
+    color: $black-ocac-light;
+    background-color: $yellow-ocac-medium;
     cursor: not-allowed;
   }
 }
 
 .quaternary {
-  background-color: $black-ocac_dark;
+  background-color: $black-ocac-dark;
   color: $lightest;
   &:hover {
-    background-color: $black-ocac_medium;
+    background-color: $black-ocac-medium;
   }
   &:disabled {
-    color: $black-ocac_light;
-    background-color: $black_ocac_medium;
+    color: $black-ocac-light;
+    background-color: $black-ocac-medium;
     cursor: not-allowed;
   }
 }
 
 .primary_outline {
-  color: $primary_dark;
+  color: $primary-dark;
   background-color: $lightest;
-  border: solid 1px $primary_dark;
+  border: solid 1px $primary-dark;
   &:hover {
     color: $lightest;
-    background-color: $primary_dark;
+    background-color: $primary-dark;
   }
   &:disabled {
-    color: $primary_light;
+    color: $primary-light;
     background-color: $lightest;
-    border: solid 1px $primary_light;
+    border: solid 1px $primary-light;
     cursor: not-allowed;
   }
 }
 
 .secondary_outline {
   background-color: $lightest;
-  color: $primary_dark;
-  border: solid 1px $secondary_dark;
+  color: $primary-dark;
+  border: solid 1px $secondary-dark;
   &:hover {
     color: $lightest;
-    background-color: $secondary_dark;
+    background-color: $secondary-dark;
   }
   &:disabled {
-    color: $primary_light;
+    color: $primary-light;
     background-color: $lightest;
-    border: solid 1px $secondary_light;
+    border: solid 1px $secondary-light;
     cursor: not-allowed;
   }
 }
 
 .tertiary_outline {
   background-color: $lightest;
-  color: $black_ocac_dark;
-  border: solid 1px $yellow_ocac_dark;
+  color: $black-ocac-dark;
+  border: solid 1px $yellow-ocac-dark;
   &:hover {
-    color: $black_ocac_dark;
-    background-color: $yellow_ocac_dark;
+    color: $black-ocac-dark;
+    background-color: $yellow-ocac-dark;
   }
   &:disabled {
-    color: $black_ocac_light;
+    color: $black-ocac-light;
     background-color: $lightest;
-    border: solid 1px $yellow_ocac_light;
+    border: solid 1px $yellow-ocac-light;
     cursor: not-allowed;
   }
 }
 
 .quaternary_outline {
   background-color: $lightest;
-  color: $black-ocac_dark;
-  border: solid 1px $black_ocac_dark;
+  color: $black-ocac-dark;
+  border: solid 1px $black-ocac-dark;
   &:hover {
     color: $lightest;
-    background-color: $black-ocac_dark;
+    background-color: $black-ocac-dark;
   }
   &:disabled {
-    color: $black_ocac_light;
+    color: $black-ocac-light;
     background-color: $lightest;
-    border: solid 1px $black_ocac_light;
+    border: solid 1px $black-ocac-light;
     cursor: not-allowed;
   }
 }
 
 .link {
   cursor: pointer;
-  color: $primary_dark;
+  color: $primary-dark;
   font-size: 1rem;
   &:disabled {
-    color: $primary_light;
+    color: $primary-light;
     cursor: not-allowed;
   }
 }
