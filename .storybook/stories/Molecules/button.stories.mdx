@@ -1,0 +1,109 @@
+<!-- // import React from 'react';
+// import { action } from '@storybook/addon-actions';
+// import { withA11y } from '@storybook/addon-a11y';
+// import { withKnobs, text, boolean, number } from '@storybook/addon-knobs';
+// import './button.scss'; -->
+
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import Button from '../../../src/ui/Molecules/Button';
+
+import '../../../src/ui/Atoms/index.scss';
+import './button.scss';
+
+<Meta title="🧬Molecules|Button" />
+
+# Button
+
+#
+
+#
+
+#### Buttons allow to trigger an operation.
+
+#
+
+---
+
+In OCTO Design System, we provide four types of button :
+
+- Primary button
+- Outline Button
+- Link Button
+
+♿️If the button is not **explicit** ( = the title alone does not make it possible to understand its destination or its function), the `aria-label` attribute or the `title` attribute should then be used to specify the link destination or button function.
+
+   **_Exemple :_**
+
+  ```
+
+  <Button kind="link" href="..." label="Link" aria-label="..." />
+  ```
+  ```
+
+   <Button kind="link" href="..." label="Link" title="..." />
+
+  ```
+
+---
+
+<Preview>
+  <Story name="All Buttons">
+    <div>
+      <Button className="btn" kind="primary" label="Primary" />
+      <Button className="btn" kind="primary_outline" label="Outline" />
+      <Button className="btn" kind="link" href="https://octo.com" label="Link" />
+    </div>
+  </Story>
+</Preview>
+
+## Props
+
+<Props of={Button} />
+
+## Primary
+
+<Preview>
+  <Story name="Primary Button">
+    <div>
+      <Button className="btn" kind="primary" label="Primary" />
+      <Button className="btn" kind="secondary" label="Secondary" />
+      <Button className="btn" kind="tertiary" label="Tertiary" />
+      <Button className="btn" kind="quaternary" label="Quaternary" />
+    </div>
+  </Story>
+</Preview>
+
+## Outline
+
+<Preview>
+  <Story name="Secondary Button">
+    <div>
+      <Button className="btn" kind="primary_outline" label="Primary Outline" />
+      <Button className="btn" kind="secondary_outline" label="Secondary Outline" />
+      <Button className="btn" kind="tertiary_outline" label="Tertiary Outline" />
+      <Button className="btn" kind="quaternary_outline" label="Quaternary Outline" />
+    </div>
+  </Story>
+</Preview>
+
+## Link
+
+<Preview>
+  <Story name="Link Button">
+    <div>
+      <Button kind="link" href="https://octo.com"  label="Link" />
+    </div>
+  </Story>
+</Preview>
+
+## Disabled
+
+<Preview>
+  <Story name="Quaternary Button">
+    <div>
+      <Button className="btn" kind="primary" label="Primary" disabled />
+      <Button className="btn" kind="primary_outline" label="Primary Outline" disabled/>
+       <Button kind="link" href="https://octo.com"  label="Link" disabled />
+    </div>
+  </Story>
+</Preview>

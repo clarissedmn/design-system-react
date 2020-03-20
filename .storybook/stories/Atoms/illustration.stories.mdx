@@ -1,0 +1,53 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import { linkTo } from '@storybook/addon-links';
+
+import ThereIsABetterWay from '../../../src/ui/Atoms/Illustration';
+
+<Meta title="⚛️Atoms|🎨 Illustrations" component={ThereIsABetterWay} />
+
+# 🎨 Illustrations
+
+#
+
+#
+
+#### Brand colors define the look of our websites but also our values. In this way, they have to be carefully use.
+
+#
+
+---
+
+To use an illustration,
+
+1. Copy the **name** of SvgComponent
+2. Define its `width` or/and `height` props with a number (pixels)
+3. In `title`, add a [SCSS variable color](/?path=/docs/⚛%EF%B8%8Fatoms-🌈-colors--page)
+4. ♿Specify if the illustration is :
+
+   - Declarative :
+
+  ```
+
+    <SvgComponent width=${width} height=${height} color="..."/>
+
+  ```
+
+    - Informative (add information in `title` that describe the illustration):
+
+  ```
+
+    <SvgComponent width=${width} height=${height} color="..." title="..."/>
+
+  ```
+
+---
+
+<Preview>
+  <Story name="Illustrations" className="illustrations">
+    <ThereIsABetterWay width={100} height={100} color="primaryDark" />
+  </Story>
+</Preview>
+
+## Props
+
+<Props of={ThereIsABetterWay} />
