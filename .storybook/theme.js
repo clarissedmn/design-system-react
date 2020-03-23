@@ -1,8 +1,8 @@
 import { create } from '@storybook/theming/create';
-import book from '../assets/book.svg';
+import sigle from '../src/assets/sigle.svg';
 
 export default create({
-  base: '#0e2356',
+  base: '#light',
 
   colorPrimary: '#0e2356',
   colorSecondary: '#00afcb',
@@ -34,5 +34,5 @@ export default create({
 
   brandTitle: 'OCTO Design System',
   brandUrl: 'https://octo.com',
-  brandImage: book,
+  brandImage: sigle,
 });

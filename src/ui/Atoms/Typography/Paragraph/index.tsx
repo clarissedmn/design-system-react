@@ -3,9 +3,9 @@ import styles from './index.module.scss';
 import classNames from 'classnames';
 
 interface ParagraphProps {
-  /** Set content importance. */
+  /** Set content importance : "M" | "L" | "XL" */
   level: "M" | "L" | "XL";
-  /** Choose an icon */
+   /** Render content in your `paragraph` component */
   children: any;
   className?: string;
 }

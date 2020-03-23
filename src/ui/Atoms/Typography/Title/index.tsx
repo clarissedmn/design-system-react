@@ -3,9 +3,9 @@ import styles from './index.module.scss';
 import classNames from 'classnames';
 
 interface TitleProps {
-  /** Set content importance. */
+  /** Set content importance : 1 | 2 | 3 | 4 */
   level: 1 | 2 | 3 | 4;
-  /** Choose an icon */
+  /** Render content in your `title` component */
   children: any;
   className?: string;
 }
