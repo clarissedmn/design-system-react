@@ -172,7 +172,7 @@ export default function Signature({ width, height, text, color, ...restProps }: 
       xmlSpace="preserve"
       {...restProps}
     >
-      <style>{`.prefix__st0{fill:${colors[color]}}`}</style>
+      <style>{`.prefix__st0{fill:${color}}`}</style>
       <g id="prefix__Symbols">
         <g id="prefix__Footer" transform="translate(-452 -33)">
           <g transform="translate(452 33)" id="prefix__There-is-a-better-way_footer">

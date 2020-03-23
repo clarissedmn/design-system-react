@@ -1,8 +1,8 @@
-import React from 'react';
-import styles from './index.module.scss';
 import classNames from 'classnames';
-
+import React from 'react';
 import ReactModal from 'react-modal';
+import styles from './index.module.scss';
+
 
 interface ModalProps {
   /** Set the title of modal */

@@ -1,14 +1,13 @@
-import React, { useState } from 'react';
-import { action } from '@storybook/addon-actions';
 import { withA11y } from '@storybook/addon-a11y';
-import { withKnobs, text, boolean, number } from '@storybook/addon-knobs';
-
+import { withKnobs } from '@storybook/addon-knobs';
+import React, { useState } from 'react';
+import '../../../src/ui/Atoms/index.scss';
+import Paragraph from '../../../src/ui/Atoms/Typography/Paragraph';
+import Title from '../../../src/ui/Atoms/Typography/Title';
+import Button from '../../../src/ui/Molecules/Button';
 import Modal from '../../../src/ui/Molecules/Modal';
 
-import '../../../src/ui/Atoms/index.scss';
-import Button from '../../../src/ui/Molecules/Button';
-import Title from '../../../src/ui/Atoms/Typography/Title';
-import Paragraph from '../../../src/ui/Atoms/Typography/Paragraph';
+
 
 export default {
   component: Modal,
