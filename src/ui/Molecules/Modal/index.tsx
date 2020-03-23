@@ -1,8 +1,6 @@
 import React from 'react';
 import styles from './index.module.scss';
 import classNames from 'classnames';
-import Button from '../Button';
-import Title from '../../Atoms/Typography/Title';
 
 import ReactModal from 'react-modal';
 
@@ -23,7 +21,7 @@ export default function Modal({ title, button, content, isOpen, className }: Mod
       <ReactModal
         style={{
           overlay: {
-            zIndex: '100',
+            zIndex: 100,
           },
         }}
         isOpen={isOpen}
