@@ -28,9 +28,9 @@ import './button.scss';
 
 In OCTO Design System, we provide three types of button :
 
-- Primary button
-- Outline Button
-- Link Button
+- Primary
+- Outline
+- Link
 
 ♿️If the button is not **explicit** ( = the title alone does not make it possible to understand its destination or its function), the `aria-label` attribute or the `title` attribute should then be used to specify the link destination or button function.
 
@@ -38,12 +38,12 @@ In OCTO Design System, we provide three types of button :
 
 ```
 
-<Button kind="link" href="..." label="Link" aria-label="..." />
+  <Button aria-label="..." kind="link" href="..." label="Link" />
 ```
 
 ```
 
- <Button kind="link" href="..." label="Link" title="..." />
+ <Button title="..." kind="link" href="..." label="Link" />
 
 ```
 

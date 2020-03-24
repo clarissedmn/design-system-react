@@ -7,8 +7,6 @@ const defaultSize = {
   height: '500px',
 };
 
-console.log('HERE', colors);
-
 interface IllustrationProps {
   /** The width of the `svg` element */
   width?: number;
@@ -20,8 +18,13 @@ interface IllustrationProps {
   color?: string;
 }
 
-export default function Signature({ width, height, text, color, ...restProps }: IllustrationProps) {
-  //const { width, height, text, ...restProps } = props;
+export default function Signature({
+  width,
+  height,
+  text,
+  color = colors.primaryDark,
+  ...restProps
+}: IllustrationProps) {
   let svgWidth = defaultSize.width;
   let svgHeight = defaultSize.height;
 
