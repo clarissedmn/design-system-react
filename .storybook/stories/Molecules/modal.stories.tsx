@@ -7,8 +7,6 @@ import Title from '../../../src/ui/Atoms/Typography/Title';
 import Button from '../../../src/ui/Molecules/Button';
 import Modal from '../../../src/ui/Molecules/Modal';
 
-
-
 export default {
   component: Modal,
   title: '🧬Molecules|Modal',
