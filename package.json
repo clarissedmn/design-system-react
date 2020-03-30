@@ -6,7 +6,8 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
-    "@types/jest": "^24.0.0",
+    "@types/enzyme-adapter-react-16": "^1.0.6",
+    "@types/jest": "^25.1.4",
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
@@ -28,6 +29,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:watch": "jest --watch",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public"
@@ -57,9 +59,13 @@
     "@storybook/preset-create-react-app": "^1.5.2",
     "@storybook/react": "^5.3.13",
     "@types/classnames": "^2.2.9",
+    "@types/enzyme": "^3.10.5",
     "@types/react-modal": "^3.10.5",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.0.6",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "enzyme-to-json": "^3.4.4",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.10.0",
@@ -68,6 +74,7 @@
     "husky": "^4.2.3",
     "prettier": "^1.19.1",
     "pretty-quick": "^2.0.1",
-    "react-is": "^16.13.0"
+    "react-is": "^16.13.0",
+    "ts-jest": "^25.3.0"
   }
 }
